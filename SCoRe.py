@@ -117,4 +117,4 @@ for row in creader:
 cfile.close()
 
 for i in range(0,20):
- print '%s [%+d] %d' % (club[i], difference[i], new_points[i])
+ print '%s,%d,%d' % (club[i], difference[i], new_points[i])
