@@ -2,7 +2,7 @@
 
 This software is an example used for the English Premier League.  It can be adjusted for any other league where each club plays all other clubs in the league twice a season once home and once away.
 
-score.py -- calculates table for this season based on results from this season and for unplayed matches it borrows from the previous season's results
+SCoRe.py -- calculates table for this season based on results from this season and for unplayed matches it borrows from the previous season's results
 
 Cann_SCoRe.py -- provides the same results as above in Cann Table format https://en.wikipedia.org/wiki/Cann_table With the Change in points shown next to the club name
 

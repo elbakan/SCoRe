@@ -7,7 +7,7 @@ import functools
 # wget < http://www.football-data.co.uk/mmz4281/1516/E0.csv
 # save as current.csv
 
-dfile = open('donor.csv', "rb")
+dfile = open('donor.csv', "r")
 reader = csv.reader(dfile)
 
 club = []
@@ -18,7 +18,7 @@ for row in reader:
 
 dfile.close()
 
-ofile = open('previous.csv', "rb")
+ofile = open('previous.csv', "r")
 oreader = csv.reader(ofile)
 board = [[' ']*20 for _ in range(20)]
 
@@ -33,7 +33,7 @@ for row in oreader:
 
 ofile.close() 
 
-ocfile = open('previousC.csv', "rb")
+ocfile = open('previousC.csv', "r")
 ocreader = csv.reader(ocfile)
 
 for row in ocreader:  # substitute English football League Championships results for epl donors
@@ -71,7 +71,7 @@ for i in range(0,20):
  new_points.append(old_points[i])
  difference.append(0)
 
-cfile = open('current.csv', "rb")
+cfile = open('current.csv', "r")
 creader = csv.reader(cfile)
 
 
@@ -135,10 +135,10 @@ j = 0
 # printf = functoools.partial(print, end="")
 
 for i in range(int(sort[0][2]),int(sort[19][2])-1,-1):
-  print i,
+  print (i,end=" "),
   while (i == int(sort[j][2])):
-    print sort[j][0],
-    print ("%+d" % (int(sort[j][1]))),
+    print (sort[j][0],end=" "),
+    print ("%+d" % (int(sort[j][1])),end=" "),
     j=j+1
     if (j > 19): break
-  print
+  print(end="\n")
