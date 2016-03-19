@@ -5,7 +5,7 @@ import csv
 # wget < http://www.football-data.co.uk/mmz4281/1516/E0.csv
 # save as current.csv
 
-dfile = open('donor.csv', "rb")
+dfile = open('donor.csv', "r")
 reader = csv.reader(dfile)
 
 club = []
@@ -16,7 +16,7 @@ for row in reader:
 
 dfile.close()
 
-ofile = open('previous.csv', "rb")
+ofile = open('previous.csv', "r")
 oreader = csv.reader(ofile)
 board = [[' ']*20 for _ in range(20)]
 
@@ -31,7 +31,7 @@ for row in oreader:
 
 ofile.close() 
 
-ocfile = open('previousC.csv', "rb")
+ocfile = open('previousC.csv', "r")
 ocreader = csv.reader(ocfile)
 
 for row in ocreader:  # substitute English football League Championships results for epl donors
@@ -69,7 +69,7 @@ for i in range(0,20):
  new_points.append(old_points[i])
  difference.append(0)
 
-cfile = open('current.csv', "rb")
+cfile = open('current.csv', "r")
 creader = csv.reader(cfile)
 
 
@@ -117,4 +117,4 @@ for row in creader:
 cfile.close()
 
 for i in range(0,20):
- print '%s,%d,%d' % (club[i], difference[i], new_points[i])
+ print ('%s,%d,%d' % (club[i], difference[i], new_points[i]))
