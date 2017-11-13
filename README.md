@@ -8,9 +8,9 @@ Cann_SCoRe.py -- provides the same results as above in Cann Table format https:/
 
 donor.csv -- matches promoted teams with relegated teams
 
-current.csv -- get from http://www.football-data.co.uk/mmz4281/1516/E0.csv 
+current.csv -- get from http://www.football-data.co.uk/mmz4281/1718/E0.csv
 
-previous.csv -- get from http://www.football-data.co.uk/mmz4281/1415/E0.csv
+previous.csv -- get from http://www.football-data.co.uk/mmz4281/1617/E0.csv
 
-previousC.csv -- Six lines from http://www.football-data.co.uk/mmz4281/1415/E1.csv involving last years matches in the English League Championship from promoted teams
+previousC.csv -- Six lines from http://www.football-data.co.uk/mmz4281/1617/E1.csv involving last years matches in the English League Championship from promoted teams
 # SCoRe
